@@ -23,4 +23,24 @@ To get started with the code in this repository:
 1. Clone the repository:
    ```bash
    git clone https://github.com/utrodus/learn_django.git
-   cd learn-django-william-vincent
+   python3
+2. Setup virtual environtment:
+   ```bash
+   # Windows
+   $ python -m venv .venv
+   $ .venv\Scripts\Activate.ps1
+   (.venv) 
+
+   # macOS
+   $ python3 -m venv .venv
+   $ source .venv/bin/activate   
+   (.venv) $ 
+
+3. Open project directory and install requirements.txt, **Ex: Open ch_02_hello_world_app :**
+   ``` bash
+   (.venv) $ cd ch_02_hello_world_app
+   (.venv) $ pip install -r requirements.txt
+
+4. And then run the django server with this commands:
+   ``` bash
+   (.venv) $ python manage.py runserver

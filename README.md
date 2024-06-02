@@ -1,10 +1,5 @@
-# Learn Django - Django for Beginners By William Vincent
-
-> This repository is the result of the practice of developing and building websites using **Django 4.2.0**.
-
 ## Overview
-
-This repository contains the exercises and projects from the book *Django for Beginners* by William Vincent. The book provides a comprehensive introduction to building web applications with Django, a popular web framework for Python.
+> This repository is the result of the practice of developing and building websites using **Django 4.2.0** from the book *Django for Beginners* by William Vincent. The book provides a comprehensive introduction to building web applications with Django, a popular web framework for Python.
 
 ## Content
 

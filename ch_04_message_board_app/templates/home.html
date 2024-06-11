@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+{% block page_title %}
+  Home Page
+{% endblock %}
+
+{% block content %}
+  <main class="container">
+    <h2>Message Board Home Page</h2>
+    {% for post in post_list %}
+      <article>
+        <header>
+          <h5 class="pico-color-indigo-600">{{ post.text }}</h5>
+        </header>
+        <p>{{ post.description }}</p>
+      </article>
+    {% endfor %}
+  </main>
+{% endblock %}

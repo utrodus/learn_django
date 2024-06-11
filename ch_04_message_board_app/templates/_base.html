@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block page_title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.indigo.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <strong>MessageBoard</strong>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="{% url 'home' %}">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

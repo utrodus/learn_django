@@ -27,21 +27,22 @@ To get started with the code in this repository:
    ```bash
    git clone https://github.com/utrodus/learn_django.git
    python3
-2. Setup virtual environtment:
+2. Setup virtual environtment and enter directory:
    ```bash
    # Windows
+   $ cd ch_02_hello_world_app
    $ python -m venv .venv
    $ .venv\Scripts\Activate.ps1
    (.venv) 
 
    # macOS
+   $ cd ch_02_hello_world_app
    $ python3 -m venv .venv
    $ source .venv/bin/activate   
    (.venv) $ 
 
-3. Open project directory and install requirements.txt, **Ex: Open ch_02_hello_world_app :**
-   ``` bash
-   (.venv) $ cd ch_02_hello_world_app
+3. install requirements.txt, **Ex: Open ch_02_hello_world_app :**
+   ``` bash  
    (.venv) $ pip install -r requirements.txt
 
 4. And then run the django server with this commands:

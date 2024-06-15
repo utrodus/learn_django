@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+{% block content %}
+  <h4 class="mt-5 mb-4 text-center">🗒️ Detail Post</h4>
+  <div class="card bg-white shadow-1 mb-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ detail_post.title }}</h5>
+      <p class="card-text">{{ detail_post.body }}</p>
+      <small>{{ detail_post.created_at }}</small>
+    </div>
+  </div>
+{% endblock %}

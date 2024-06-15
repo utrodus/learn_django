@@ -1,0 +1,36 @@
+{% extends '_base.html' %}
+{% block content %}
+  <header>
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+      background-image: url('https://www.tokioschool.com/en/wp-content/uploads/2023/02/what-is-django-python.jpg.webp');
+      height: 400px;
+    ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Django Blog</h1>
+            <h4 class="mb-5">Learning Django in Django For Beginner Ebook By William Vincent</h4>
+            <a data-mdb-ripple-init class="btn btn-outline-success btn-lg mt-2" href="#latest-post" role="button">View Latest Post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+  <h4 id="latest-post" class="mt-5 mb-4">📑 Latest Post</h4>
+  <div class="row">
+    {% for post in post_list %}
+      <a href="{{ post.get_absolute_url }}">
+        <div class="card border border-success shadow-0 mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body }}</p>
+            <small>{{ post.created_at }}</small>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endblock %}
